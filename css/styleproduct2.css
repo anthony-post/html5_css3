@@ -17,12 +17,12 @@ body{
 
 /*Product name*/
 
-.productname-div{
+.productname{
     background-color: #445162;
     padding: 50px 0;
 }
 
-.productname{
+.productname-div{
 	display: flex;
 	justify-content: space-between;
 }
@@ -77,11 +77,11 @@ body{
 
 /*Product about*/
 
-.productabout-div{
+.productabout{
     padding: 50px 0;
 }
 
-.productabout{
+.productabout-div{
     display: flex;
 }
 
@@ -114,12 +114,12 @@ body{
 
 /*Блок Dignity*/
 
-.dignity-div{
+.dignity{
     background-color: #f5f5f5;
     padding: 50px;
 }
 
-.dignity {
+.dignity-div {
 
 }
 
@@ -183,8 +183,12 @@ body{
 
 /*Блок Screenshots*/
 
-.screenshots-div{
+.screenshots{
     padding: 50px;
+}
+
+.screenshots-div {
+    
 }
 
 .screenshots-title{
@@ -235,12 +239,12 @@ body{
 
 /*Reviews*/
 
-.reviews-div{
+.reviews{
     background-color: #f5f5f5;
     padding: 50px;
 }
 
-.reviews{
+.reviews-div{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
