@@ -1,3 +1,9 @@
+
+@font-face {
+    font-family: 'Arial MT';
+    src: url('fonts/arialmt/ARIALMT.ttf');
+}
+
 *{
     box-sizing: border-box;
 }
@@ -17,12 +23,12 @@ body{
 
 /*Product name*/
 
-.productname{
+.product-name{
     background-color: #445162;
     padding: 50px 0;
 }
 
-.productname-div{
+.product-name-wrapper{
 	display: flex;
 	justify-content: space-between;
 }
@@ -74,26 +80,25 @@ body{
     line-height: 36px;
 }
 
-
 /*Product about*/
 
-.productabout{
+.product-about{
     padding: 50px 0;
 }
 
-.productabout-div{
+.product-about-wrapper{
     display: flex;
 }
 
-.productabout-body{
+.product-about-body{
     flex: 1 1 auto;
 }
 
-.productabout-body-title{
+.product-about-body-title{
     margin: 0px 0px 33px 0px;
 }
 
-.productabout-body-text p{
+.product-about-body-text p{
     margin: 0px 0px 20px 0px;
     color: #333333;
     font-family: "Arial MT";
@@ -102,7 +107,7 @@ body{
     line-height: 24px;
 }
 
-.productabout-image{
+.product-about-image{
     flex: 0 0 430px;
     padding: 0px 0px 0px 100px;
 }
@@ -111,7 +116,6 @@ body{
     max-width: 100%;
 }
 
-
 /*Блок Dignity*/
 
 .dignity{
@@ -119,7 +123,7 @@ body{
     padding: 50px;
 }
 
-.dignity-div {
+.dignity-wrapper {
 
 }
 
@@ -180,14 +184,13 @@ body{
 	  left: 5px;
 }
 
-
 /*Блок Screenshots*/
 
 .screenshots{
     padding: 50px;
 }
 
-.screenshots-div {
+.screenshots-wrapper {
     
 }
 
@@ -236,7 +239,6 @@ body{
     line-height: 24px;
 }
 
-
 /*Reviews*/
 
 .reviews{
@@ -244,7 +246,7 @@ body{
     padding: 50px;
 }
 
-.reviews-div{
+.reviews-wrapper{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -306,4 +308,272 @@ body{
     font-size: 14px;
     font-weight: 400;
     line-height: 18px;
+}
+
+/*Buy it now*/
+
+.prices {
+    width: 100%;
+    padding: 50px;
+}
+
+.prices-title {
+    width: 100%;
+    display: block;
+    text-align: center;
+    margin: 0;
+    margin: 0 0 20px 0;
+}
+
+.prices-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.prices-item {
+    /*width: 30%;*/
+    flex-basis: 25%;
+    margin: 0 40px 0 0;
+    padding: 0 0 10px 0;
+    background-color: #445162;
+    color: white;
+    border-radius: 5px;
+    border: 2px solid #445162;
+}
+
+.prices-item:nth-child(4) {
+  margin: 0;
+}
+
+.prices-item-title {
+    width: 100%;
+    display: block;
+    text-align: center;
+    margin: 0;
+    padding: 10px;
+    
+    font-family: "Arial MT";
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.prices-item-price {
+    text-align: center;
+    background-color: #fff;
+    color: #445162;
+    padding: 18px 0;
+    margin: 0;
+    
+    font-family: "Arial MT";
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.prices-item-list {
+    color: #ffffff;
+    font-family: "Arial MT";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.price-button {
+    display: block;
+    width: 90%;
+    padding: 5px 10px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    outline: none;
+
+    color: #445161;
+    font-family: "Arial - Bold MT";
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+/* Contacts form */
+
+.contacts-form {
+    background-color: #445162;
+    padding: 50px 0;
+}
+
+.contacts-form-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.contacts_title {
+    flex-basis: 100%;
+    text-align: center;
+    color: #ffffff;
+    font-family: "Arial MT";
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 36px;
+
+    margin: 0;
+    padding: 0 0 30px 0;
+}
+
+.contacts_form {
+    /*flex-basis: 70%;*/
+
+}
+
+.callback {
+    width: 500px;
+}
+
+.contacts_form_pole {
+    width: 100%;
+    /*height: 40px;*/
+    background-color: #ffffff;    
+    
+    padding-left: 10px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    
+    outline: none;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    margin-bottom: 21px;
+}
+
+.contacts_form_pole_textarea {
+    max-width: 100%;
+    min-width: 500px;
+    height: 170px;
+    background-color: #ffffff; 
+    
+    padding-left: 10px;
+    padding-top: 14px;
+    
+    outline: none;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    margin-bottom: 21px;
+}
+
+.button {
+    color: #445162;
+    font-family: "Arial - Bold MT";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-transform: uppercase;
+    
+    width: 140px;
+    height: 40px;
+    background-color: #ffffff;
+    
+    outline: none;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    
+    margin-left: 180px;
+}
+
+input::placeholder,
+textarea::placeholder {
+   
+    color: #445162;
+    font-family: "Arial MT";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.contacts_phone {
+    /*flex-basis: 30%;*/
+    margin: 0 0 0 -250px;
+}
+
+.contacts-list {
+    color: #ffffff;
+    font-family: "Arial MT";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.contacts-list-item {
+    margin-bottom: 15px;
+}
+
+.contacts-list-item::before {
+    content: "";
+    background-image: url(../img/skype_icon.png);
+    display: inline-block; /*чтобы галка распологалась в одну линию с текстом*/
+    vertical-align: middle; /*расположение по центру блока*/
+    width: 24px; /*ширина inline-блока галки по макету*/
+    height: 26px; /*высота inline-блока галки по макету*/
+    background-repeat: no-repeat; /*выключение повторения фона картинки-галки*/
+    background-size: contain; /*чтобы картинка-галка поместилась в указанный размер*/
+    background-position: center center; /*располагаем по центру inline-блока*/
+    margin-right: 5px;
+}
+
+.icq::before {
+    background-image: url(../img/icq_icon.png);
+    width: 26px;
+    height: 26px;
+}
+
+.post::before {
+    background-image: url(../img/email_icon.png);
+    width: 22px;
+    height: 22px;
+}
+
+.phone::before {
+    background-image: url(../img/phone_icon.png);
+    width: 24px;
+    height: 23px;
+}
+
+.socialicons {
+    margin-top: 30px;
+}
+
+.socialicons .fab {
+    color: #445162;
+    background-color: #ffffff;
+}
+
+.socialicons .fa-twitter, .fa-linkedin-in, .fa-google, .fa-youtube {
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.socialicons .fa-facebook-f {
+    padding: 10px 13px 10px 13px;
+    border-radius: 50%;
+}
+
+.socialicons .fab:hover {
+    background-color: #445162;
+    color: #ffffff;
+}
+
+.copyright {
+    background-color: #f5f5f5;
+}
+
+.copyright-text {
+    text-align: center;
+    margin: 0;
+    padding: 10px 0;
 }
