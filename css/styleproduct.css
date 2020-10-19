@@ -496,7 +496,9 @@ body{
     background-color: grey;
 }
 
-.button:hover, .button:focus, .button:active {
+.button:hover, 
+.button:focus, 
+.button:active {
     background-color: #445162;
     color: white;
     border: 1px solid white;
@@ -551,8 +553,11 @@ textarea::placeholder {
     color: #ffffff;
 }
 
-.contacts-list-item-link:hover {
+.contacts-list-item-link:hover,
+.contacts-list-item-link:focus,
+.contacts-list-item-link:active {
     color: red;
+    outline: none;
 }
 
 .icq::before {
@@ -593,6 +598,17 @@ textarea::placeholder {
 }
 
 .socialicons .fab:hover {
+    background-color: #445162;
+    color: #ffffff;
+}
+
+.socialicons .fab:focus {
+    background-color: #445162;
+    color: #ffffff;
+    outline: none;
+}
+
+.socialicons .fab:active {
     background-color: #445162;
     color: #ffffff;
 }
